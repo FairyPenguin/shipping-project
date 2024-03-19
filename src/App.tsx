@@ -16,7 +16,7 @@ import {
 import HomePage from './pages/Home/HomePage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import AuthLayout from './Layouts/AuthLayout';
-import MainLayout from './components/UiComponents/MainLayout/MainLayout';
+// import MainLayout from './components/UiComponents/MainLayout/MainLayout';
 
 //Main Router
 const router = createBrowserRouter(
