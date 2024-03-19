@@ -1,5 +1,5 @@
 import styles from "./LoginForm.module.css"
-import { useForm, isNotEmpty, isEmail, isInRange, hasLength, matches } from '@mantine/form';
+import { useForm, isNotEmpty, isEmail } from '@mantine/form';
 import { Button, Group, TextInput, PasswordInput, Box } from '@mantine/core';
 
 export default function LoginForm() {
