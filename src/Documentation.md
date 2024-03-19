@@ -4,6 +4,7 @@
 
 * React 
 * TypeScript 
+* Module CSS
 
 
 ### Dependencies:
@@ -33,3 +34,4 @@
 * "react-router-dom": "^6.22.3",
 * "recharts": "2"
 * 
+
