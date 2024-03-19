@@ -1,3 +1,4 @@
+import styles from "./LoginForm.module.css"
 import { useForm, isNotEmpty, isEmail, isInRange, hasLength, matches } from '@mantine/form';
 import { Button, Group, TextInput, PasswordInput, Box } from '@mantine/core';
 
@@ -40,7 +41,7 @@ export default function LoginForm() {
 
 
             <Group justify="flex-end" mt="md">
-                <Button type="submit">Submit</Button>
+                <Button className={styles["button"]} type="submit">Login</Button>
             </Group>
         </Box>
     );
