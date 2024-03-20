@@ -51,8 +51,15 @@ export default function LoginForm() {
             />
 
 
-            <Group justify="flex-end" mt="md">
-                <Button className={styles["button"]} type="submit">Login</Button>
+
+            <Group justify="center" mt="md">
+                <Button
+                    className={styles["button"]}
+                    type="submit"
+                    miw={200}
+                    mih={45}
+                >Log in
+                </Button>
             </Group>
         </Box>
     );
