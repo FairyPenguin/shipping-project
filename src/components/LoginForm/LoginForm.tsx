@@ -33,6 +33,8 @@ export default function LoginForm() {
                 withAsterisk
                 pt="md"
                 pb="md"
+                size="lg"
+                radius={10}
 
                 {...form.getInputProps('email')}
                 style={{ width: '100%' }}
@@ -44,7 +46,8 @@ export default function LoginForm() {
                 pt="md"
                 pb="md"
                 placeholder="Your password"
-
+                size="lg"
+                radius={10}
                 {...form.getInputProps('password')}
                 style={{ width: '100%' }}
 
@@ -56,8 +59,10 @@ export default function LoginForm() {
                 <Button
                     className={styles["button"]}
                     type="submit"
-                    miw={200}
+                    miw={150}
                     mih={45}
+                    radius={10}
+
                 >Log in
                 </Button>
             </Group>
