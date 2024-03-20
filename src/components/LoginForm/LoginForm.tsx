@@ -1,6 +1,6 @@
 import styles from "./LoginForm.module.css"
 import { useForm, isNotEmpty, isEmail } from '@mantine/form';
-import { Button, Group, TextInput, PasswordInput, Box } from '@mantine/core';
+import { Button, TextInput, PasswordInput, Box, Flex } from '@mantine/core';
 
 export default function LoginForm() {
     const form = useForm({
@@ -52,20 +52,40 @@ export default function LoginForm() {
                 style={{ width: '100%' }}
 
             />
+            <p className={styles["forget__password__text"]}>
+                <a
+                    className={styles["forget__password__link"]}
+                    href="">
+                    forget password?
+                </a>
+            </p>
 
 
+            <Flex
 
-            <Group justify="center" mt="md">
+                justify="center"
+                align="center"
+                direction="column"
+                pt="md"
+            >
                 <Button
                     className={styles["button"]}
                     type="submit"
                     miw={150}
                     mih={45}
                     radius={10}
-
+                    mt="lg"
                 >Log in
                 </Button>
-            </Group>
+
+                <p className={styles["signup__text"]}>
+                    Not a member?
+                    <a
+                        className={styles["signup__link"]}
+                        href=""> Sign up</a>
+                </p>
+
+            </Flex>
         </Box>
     );
 }
