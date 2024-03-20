@@ -27,14 +27,19 @@ function LoginPage() {
 
 
             <div className={styles["right__side"]}>
-                <div className={styles["text"]}>
-                    <h1>Log in</h1>
-                    <p>Log in if you have an account in here</p>
-                </div>
+
+
+
+
+
 
                 <div className={styles["form__container"]}>
                     {/* <form className={styles["form"]} >
                     </form> */}
+                    <div className={styles["right__side__text"]}>
+                        <h2>Log in</h2>
+                        <p>Log in if you have an account in here</p>
+                    </div>
 
                     <LoginForm />
                 </div>

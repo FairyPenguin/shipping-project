@@ -18,25 +18,36 @@ export default function LoginForm() {
     });
 
     return (
-        <Box component="form" maw={400} mx="auto" onSubmit={form.onSubmit(() => { })}>
+        <Box component="form"
+            // miw="300"
+            // maw="400"
+            mx="auto"
+            onSubmit={form.onSubmit(() => { })}
+            style={{ width: '100%' }}
 
-
+        >
 
             <TextInput
                 label="Your email"
                 placeholder="Your email"
                 withAsterisk
-                mt="md"
+                pt="md"
+                pb="md"
+
                 {...form.getInputProps('email')}
+                style={{ width: '100%' }}
             />
 
             <PasswordInput
                 label="Password"
                 withAsterisk
-                mt="md"
+                pt="md"
+                pb="md"
                 placeholder="Your password"
 
                 {...form.getInputProps('password')}
+                style={{ width: '100%' }}
+
             />
 
 
