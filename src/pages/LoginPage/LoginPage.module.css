@@ -22,8 +22,8 @@
   align-self: flex-start;
 }
 
-.sidebar__featured__img {
-  /* bottom: 150px; */
+.right__side__logo__img {
+  display: none;
 }
 
 .sidebar__featured__img img {
@@ -84,5 +84,14 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+  }
+
+  .right__side {
+    padding-block: 2rem;
+  }
+
+  .right__side__logo__img {
+    display: block;
+    padding-block: 1rem 1.5rem;
   }
 }

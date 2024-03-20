@@ -29,8 +29,9 @@ function LoginPage() {
             <div className={styles["right__side"]}>
 
 
-
-
+                <div className={styles["right__side__logo__img"]}>
+                    <img src={LogoImage} alt="" />
+                </div>
 
 
                 <div className={styles["form__container"]}>
