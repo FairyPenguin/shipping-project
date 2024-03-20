@@ -13,9 +13,9 @@ import {
 } from "react-router-dom";
 
 // Pages Imports
-import HomePage from './pages/Home/HomePage';
-import LoginPage from './pages/LoginPage/LoginPage';
-import AuthLayout from './Layouts/AuthLayout';
+import HomePage from "@pages/Home/HomePage";
+import LoginPage from '@pages/LoginPage/LoginPage';
+import AuthLayout from '@layouts/AuthLayout';
 // import MainLayout from './components/UiComponents/MainLayout/MainLayout';
 
 //Main Router
