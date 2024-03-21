@@ -1,13 +1,14 @@
-import styles from "./LoginForm.module.css"
+import styles from "./ForgetPassword.module.css"
 import { useForm, isNotEmpty, isEmail } from '@mantine/form';
 import {
     Button,
-    TextInput,
-    PasswordInput,
+    // TextInput,
+    // PasswordInput,
+    NumberInput,
     Box, Flex
 } from '@mantine/core';
 
-export default function LoginForm() {
+export default function ForgetPasswordForm() {
     const form = useForm({
         initialValues: {
             email: '',
@@ -32,7 +33,7 @@ export default function LoginForm() {
 
         >
 
-            <TextInput
+            {/* <TextInput
                 label="Your email"
                 placeholder="Your email"
                 withAsterisk
@@ -43,27 +44,30 @@ export default function LoginForm() {
 
                 {...form.getInputProps('email')}
                 style={{ width: '100%' }}
-            />
+            /> */}
 
-            <PasswordInput
-                label="Password"
+            <NumberInput
+                label="Phone Number"
                 withAsterisk
                 pt="md"
                 pb="md"
-                placeholder="Your password"
+                placeholder="Enter your phone number"
                 size="lg"
                 radius={10}
                 {...form.getInputProps('password')}
                 style={{ width: '100%' }}
+                hideControls
+            // prefix="0"
+            // defaultValue={"0"}
 
             />
-            <p className={styles["forget__password__text"]}>
+            {/* <p className={styles["forget__password__text"]}>
                 <a
                     className={styles["forget__password__link"]}
                     href="/forget-password">
                     forget password?
                 </a>
-            </p>
+            </p> */}
 
 
             <Flex
@@ -80,15 +84,15 @@ export default function LoginForm() {
                     mih={45}
                     radius={10}
                     mt="lg"
-                >Log in
+                >Resend Recovery Code
                 </Button>
 
-                <p className={styles["signup__text"]}>
+                {/* <p className={styles["signup__text"]}>
                     Not a member?
                     <a
                         className={styles["signup__link"]}
                         href=""> Sign up</a>
-                </p>
+                </p> */}
 
             </Flex>
         </Box>
