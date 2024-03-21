@@ -16,6 +16,8 @@ import {
 import HomePage from "@pages/Home/HomePage";
 import LoginPage from '@pages/LoginPage/LoginPage';
 import AuthLayout from '@layouts/AuthLayout';
+import ForgetPasswordPage from '@pages/ForgetPasswordPage/ForgetPasswordPage';
+import ResetPasswordPage from '@pages/ResetPasswordPage/ResetPasswordPage';
 // import MainLayout from './components/UiComponents/MainLayout/MainLayout';
 
 //Main Router
@@ -25,6 +27,8 @@ const router = createBrowserRouter(
     <Route path='/' element={<AuthLayout />}>
       <Route index element={<HomePage />} />
       <Route path='/login' element={<LoginPage />} />
+      <Route path='/forget-password' element={<ForgetPasswordPage />} />
+      <Route path='/reset-password' element={<ResetPasswordPage />} />
     </Route >
   ))
 
