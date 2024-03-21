@@ -36,6 +36,12 @@ export default function ForgetPasswordForm() {
                 label="Password"
                 placeholder="Enter your new password"
                 {...form.getInputProps('password')}
+                pt="md"
+                pb="md"
+                size="lg"
+                radius={10}
+                style={{ width: '100%' }}
+
             />
 
             <PasswordInput
@@ -43,6 +49,11 @@ export default function ForgetPasswordForm() {
                 label="Confirm password"
                 placeholder="Confirm your new password"
                 {...form.getInputProps('confirmPassword')}
+                pt="md"
+                pb="md"
+                size="lg"
+                radius={10}
+                style={{ width: '100%' }}
             />
 
 
